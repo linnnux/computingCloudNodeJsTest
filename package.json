@@ -1,10 +1,11 @@
 {
-  "name": "mon-projet",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node index.js"
+  "name" : "myapp",
+  "version" : "0.1.0",
+  "main" : "index.js",
+  "scripts" : {
+    "start" : "node index.js"
   },
-  "dependencies": {
-    "express": "^4.17.1"
+  "engines" : {
+    "node" : "^10"
   }
 }
