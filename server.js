@@ -1,6 +1,10 @@
 const http = require('http');
 const app = require('./app');
 
+
+
+/*
+
 const normalizePort = val => {
     const port = parseInt(val, 10);
 
@@ -34,14 +38,22 @@ const errorHandler = error => {
             throw error;
     }
 };
+*/
+/*
+http.createServer(function (req, res)
+{
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello les P3A2 !  Dimitri ! we are the 1st february, are you ok Dimitri?');
+}).listen(8080);
 
+*/
 const server = http.createServer(app);
-
+/*
 server.on('error', errorHandler);
 server.on('listening', () => {
     const address = server.address();
     const bind = typeof address === 'string' ? 'pipe ' + address : 'port ' + port;
     console.log('listening on ' + bind)
 });
-
-server.listen(port);
+*/
+server.listen(8080);
